@@ -14,3 +14,6 @@
 
 /* Página Pix: pagamento, instruções e resumo em sequência. */
 .pix-page .checkout-grid{grid-template-columns:minmax(0,1fr);max-width:680px;margin:0 auto;gap:24px}.pix-page .order-summary{position:static}.pix-page .pix-result{margin-top:0}.pix-page .pix-tutorial{border-top:1px solid #e5e5e5;margin-top:28px;padding-top:25px}.pix-page .pix-method{margin-top:0}
+/* Preserva a ordem do Pix também quando a regra mobile move o resumo. */
+.pix-page .checkout-grid>.form-card{grid-row:1}
+.pix-page .checkout-grid>.order-summary{grid-row:2;position:static}

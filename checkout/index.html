@@ -15,6 +15,9 @@
 
 /* Página Pix: pagamento, instruções e resumo em sequência. */
 .pix-page .checkout-grid{grid-template-columns:minmax(0,1fr);max-width:680px;margin:0 auto;gap:24px}.pix-page .order-summary{position:static}.pix-page .pix-result{margin-top:0}.pix-page .pix-tutorial{border-top:1px solid #e5e5e5;margin-top:28px;padding-top:25px}.pix-page .pix-method{margin-top:0}
+/* Preserva a ordem do Pix também quando a regra mobile move o resumo. */
+.pix-page .checkout-grid>.form-card{grid-row:1}
+.pix-page .checkout-grid>.order-summary{grid-row:2;position:static}
 </style></head>
 <body><header class="checkout-header"><div class="header-inner"><a href="/" aria-label="Voltar para a loja"><img src="/images/terabyte-logo.svg" alt="Loja PC Gamer" width="178" height="50"></a><span class="header-caption"><span aria-hidden="true">✓</span> FINALIZAR COMPRA</span></div></header><div class="campaign-strip"><div><strong>Esquenta Black November</strong><span>APROVEITE!</span></div></div>
 <main class="checkout-shell"><a id="back-product" class="back-link" href="/">← Continuar comprando</a><ol class="steps" aria-label="Etapas do checkout"><li data-step="1" aria-current="step"><span>1</span>Identificação</li><li data-step="2"><span>2</span>Entrega</li><li data-step="3"><span>3</span>Pagamento</li></ol><div id="empty-checkout" class="card" hidden><h1>Nenhum produto selecionado</h1><p>Escolha um produto na loja para continuar.</p><a class="primary link-button" href="/">Ver produtos</a></div>
