@@ -5,7 +5,7 @@
   "outputDirectory": "dist",
   "functions": {
     "api/pix.js": {
-      "maxDuration": 30,
+      "maxDuration": 60,
       "includeFiles": "products.json"
     }
   },
@@ -17,6 +17,14 @@
     {
       "source": "/api/pix/status",
       "destination": "/api/pix?operation=status"
+    },
+    {
+      "source": "/api/pix/webhook",
+      "destination": "/api/pix?operation=webhook"
+    },
+    {
+      "source": "/api/pix/reconcile",
+      "destination": "/api/pix?operation=reconcile"
     }
   ],
   "headers": [
@@ -45,6 +53,12 @@
           "value": "no-referrer"
         }
       ]
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/pix/reconcile",
+      "schedule": "0 3 * * *"
     }
   ]
 }
