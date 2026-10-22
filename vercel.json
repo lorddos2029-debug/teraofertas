@@ -1,0 +1,50 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/pix.js": {
+      "maxDuration": 30,
+      "includeFiles": "products.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/pix/charge",
+      "destination": "/api/pix?operation=charge"
+    },
+    {
+      "source": "/api/pix/status",
+      "destination": "/api/pix?operation=status"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/checkout/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    },
+    {
+      "source": "/pix",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    }
+  ]
+}

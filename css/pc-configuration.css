@@ -1,0 +1,19 @@
+.local-pc-specs{padding:26px 22px;margin-top:24px;margin-bottom:24px;color:#222}
+.local-pc-specs>h3{font-size:22px;margin:0 0 24px;font-weight:700}
+.local-pc-specs .pc-builder-sections,.reference-configuration .pc-builder-sections{display:block!important}
+.local-pc-specs .pc-builder-block,.reference-configuration .pc-builder-block{margin-bottom:24px}
+.local-pc-specs .pc-builder-block__header,.reference-configuration .pc-builder-block__header{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.local-pc-specs .pc-builder-block__title,.reference-configuration .pc-builder-block__title{font-size:16px;font-weight:700;color:#222}
+.local-pc-specs .pc-builder-block__line,.reference-configuration .pc-builder-block__line{height:1px;background:#ddd;flex:1}
+.local-pc-specs .pc-builder-block__count,.reference-configuration .pc-builder-block__count{font-size:12px;color:#777}
+.local-pc-specs .pc-builder-section,.reference-configuration .pc-builder-section{display:block!important;background:#fff;border:1px solid #e1e1e1;border-radius:8px;padding:15px;margin-bottom:10px}
+.local-pc-specs .pc-builder-item__left,.reference-configuration .pc-builder-item__left{display:flex;align-items:center;gap:20px}
+.local-pc-specs .pc-builder-item__img-wrap,.reference-configuration .pc-builder-item__img-wrap{width:95px;min-width:95px;height:95px;background:#fff}
+.local-pc-specs .pc-builder-item__img-wrap img,.reference-configuration .pc-builder-item__img-wrap img{width:100%;height:100%;object-fit:contain}
+.local-pc-specs .pc-builder-item__cat,.reference-configuration .pc-builder-item__cat{display:block;color:#777;font-size:12px;margin-bottom:6px}
+.local-pc-specs .pc-builder-item__name,.reference-configuration .pc-builder-item__name{display:block;color:#222;font-size:15px;line-height:1.5;font-weight:600}
+.local-pc-specs .pc-builder-item__price,.reference-configuration .pc-builder-item__price{display:none}
+@media(max-width:767px){.local-pc-specs{padding:20px 15px}.local-pc-specs .pc-builder-item__left,.reference-configuration .pc-builder-item__left{gap:12px}.local-pc-specs .pc-builder-item__name,.reference-configuration .pc-builder-item__name{font-size:13px}}
+.local-pc-specs,.reference-configuration,.local-pc-specs *,.reference-configuration *{font-family:Roboto,Arial,sans-serif}
+.local-pc-specs .pc-builder-item__info,.reference-configuration .pc-builder-item__info{min-width:0;flex:1}
+.local-pc-specs .pc-builder-item__name,.reference-configuration .pc-builder-item__name{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;max-height:none!important;-webkit-line-clamp:unset!important}

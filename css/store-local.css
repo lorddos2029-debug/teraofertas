@@ -1,0 +1,25 @@
+#store-cart{border:0;border-radius:16px;padding:28px;width:min(640px,94vw);max-height:85vh;color:#202124;box-shadow:0 20px 80px #0005;font:16px Arial,sans-serif}#store-cart::backdrop{background:#0009}#store-cart .store-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}#store-cart h2{font-size:25px;margin:0}#store-cart button{cursor:pointer;border:0;border-radius:6px;padding:10px;background:#eee;color:#222}#store-cart .store-item{border-top:1px solid #ddd;padding:18px 0;display:grid;gap:12px}#store-cart p{margin:10px 0;line-height:1.5}#store-cart input{width:70px;padding:8px;border:1px solid #aaa;border-radius:4px}#store-cart .store-total{font-size:22px;font-weight:bold}#store-cart .store-checkout{background:#148544;color:white;width:100%;padding:16px;font-weight:bold;margin-top:16px}#store-cart .store-checkout:disabled{background:#767676;cursor:not-allowed}#store-cart .store-notice{background:#fff4d6;padding:12px;border-radius:6px}
+/* Seções removidas conforme a seleção do proprietário. */
+.header-main-menu, .hidden-mega-menu, .wsshopmyaccount,
+.header-site-menu-icons, .m_burger, #menuDepartamento,
+#sugeridos, .AreaCompreJunto,
+.container:has(> .AreaCompreJunto), .container:has(> #sugeridos) {
+  display: none !important;
+}
+.header-site-grid {
+  grid-template-columns: auto minmax(0, 1fr) !important;
+}
+
+/* Barra de categorias somente visual. */
+.store-static-nav{background:#222;color:#eee;width:100%;font-family:Arial,sans-serif}
+.store-static-nav-inner{max-width:1430px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:53px;white-space:nowrap;overflow-x:auto;font-size:14px;font-weight:600}
+.store-static-nav-inner>span{display:inline-block;position:relative;cursor:default;flex-shrink:0;line-height:22px}
+.store-static-departments{background:#111;padding:6px 14px;border-radius:4px;font-weight:400}
+.store-static-departments>span{font-size:22px;vertical-align:-1px;margin-right:7px}
+.store-static-promotion,.store-static-coupons,.store-static-shipping{padding:5px 10px;border-radius:4px;color:white;font-weight:700}
+.store-static-promotion{background:#ff5510}.store-static-coupons{background:#3483fa}.store-static-shipping{background:#00a64f}
+.store-static-home small{position:absolute;right:0;top:-11px;background:#ff5510;color:white;font-size:9px;line-height:13px;padding:0 4px}
+.pc-builder-sections span.pc-builder-item__name{cursor:default;text-decoration:none}
+@media(max-width:767px){.store-static-nav-inner{padding:10px 14px;gap:22px;font-size:12px}}
+
+.store-static-nav-inner{scrollbar-width:none;-ms-overflow-style:none}.store-static-nav-inner::-webkit-scrollbar{display:none}

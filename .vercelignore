@@ -1,0 +1,8 @@
+.env*
+!.env.example
+node_modules/
+dist/
+tests/
+server*.log
+index.original.html
+index.before-catalog.html

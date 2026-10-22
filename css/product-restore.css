@@ -1,0 +1,26 @@
+/* Mantém o layout original das páginas de produto. */
+.header-site-grid{grid-template-columns:auto minmax(0,1fr)!important;gap:30px!important}
+.header-site-search{width:100%!important}
+.boxCont[data-offer-end]{white-space:nowrap;font-variant-numeric:tabular-nums}
+#cg img{max-width:100%;height:auto}
+#cgtitle{cursor:pointer}
+@media(max-width:767px){.header-site-grid{grid-template-columns:1fr!important;gap:10px!important}.header-site-logo{margin:auto}.header-site-search{display:block!important;grid-column:1!important}.promoPdDetAviso{font-size:12px}}
+.campaign-november{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;align-items:center;gap:7px 10px;padding:8px!important}
+.campaign-november .blackkBanner{grid-column:1/-1;width:100%;margin:0!important}
+.campaign-november .blackkBanner img{display:block;width:100%!important;height:auto!important;max-width:100%;object-fit:contain}
+.campaign-november .areaRelo,.campaign-november .TitCont,.campaign-november .promoPdDetAviso{float:none!important;width:auto!important;padding:0!important;margin:0!important;min-width:0}
+.campaign-november .boxTit{display:block!important;text-align:left!important;font-size:13px!important;line-height:1.3!important;color:#ff8500!important;text-transform:none!important}
+.campaign-november .campaign-call{color:#fff;font-size:12px;font-weight:600}
+.campaign-november .boxCont{display:block!important;color:#fff!important;font-size:16px!important;line-height:1.3!important;text-align:right!important;font-weight:600}
+@media(max-width:420px){.campaign-november{grid-template-columns:22px minmax(0,1fr);gap:8px}.campaign-november .promoPdDetAviso{grid-column:1/-1}.campaign-november .boxCont{text-align:center!important}.campaign-november .boxTit{font-size:14px!important}}
+.campaign-november .areaRelo{grid-column:1;grid-row:2;height:auto!important;position:static!important}
+.campaign-november .reloFerta{position:relative!important;left:auto!important;top:auto!important;width:23px!important;height:23px!important;margin:0!important;transform:rotate(-90deg)!important}
+.campaign-november .TitCont{grid-column:2;grid-row:2;height:auto!important;min-height:0!important}
+.campaign-november .promoPdDetAviso{grid-column:3;grid-row:2;height:auto!important;min-height:0!important}
+@media(max-width:420px){.campaign-november .promoPdDetAviso{grid-column:1/-1;grid-row:3}}
+/* Mantém os selos de hardware dentro da galeria no layout mobile. */
+@media(max-width:990px){
+  .detail-product-grid__media .AreaFotoProd{position:relative!important;top:auto!important;isolation:isolate}
+  .detail-product-grid__media .AreaFotoProd .vga__marcas{right:12px;bottom:12px;z-index:2;pointer-events:none;max-width:35%}
+  .detail-product-grid__media .AreaFotoProd .vga__marcas img{max-width:100%;height:auto}
+}

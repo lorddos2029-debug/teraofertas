@@ -1,0 +1,10 @@
+.env*
+!.env.example
+node_modules/
+dist/
+.vercel/
+server*.log
+
+index.original.html
+index.before-catalog.html
+work/
